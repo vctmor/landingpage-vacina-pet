@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan&display=swap');
+
 
 html, body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    background-color: ;
 }
 
 a {
@@ -45,24 +48,73 @@ main .conteudo-esquerda {
 
 
 main .conteudo-esquerda .titulo {
-    font-family: Merriweather, serif;
+    font-family: Chewy, Merriweather;
     color: #3C184E;
-    font-weight: 900 bold;
-    font-size: 64px;
+    font-weight: 600pxs bold;
+    font-size: 45px;
+    z-index: 1;
     max-width: 600px;
     margin-bottom: 0px;
 }
 
+ /*main .atencao {
+    display: flex;
+    justify-content: left;
 
-main .chamada{
-    font-family: rubik;
+    height: 100vh;
+
+    font-family: Merriweather, serif;
+    color: #3C184E;
+    font-weight: 700 bold;
+    font-size: 50px;
+    max-width: 60px;
+    margin-bottom: 0;
+
+}*/
+
+main .atencao{
+    font-family: Chewy, Merriweather; 
+
+        color: #3C184E;
+        font-size: 40px;
+        font-weight: bold;     
+        
+       
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -240%);
+}
+
+    .textAtencao {
+        text-align: right;
+        margin-top: -20px;
+        z-index: 1;
+        /* Ajuste o valor conforme necessário para o deslocamento vertical */
+    }
+
+        header .logo {
+            width: 33px;
+            height: 33px;
+            align-self: center;
+            padding-left: 3px;
+        }
+
+main #vacinaTipo{
+
+    font-family: League Spartan;
+}    
+
+main .chamada {
+    font-family: League Spartan;
     color: #3C184E;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 25px;
     
 }
 
-main .btn{
+main btn{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -80,6 +132,17 @@ main .btn{
     cursor: pointer;
 }
 
+main #btnZap{
+display: flex;  
+    
+    width: 230px;
+    height: 60px;
+   
+    
+    
+    cursor: pointer;
+
+}
 
 
 main .btn:hover {
@@ -87,9 +150,17 @@ main .btn:hover {
 
 
 aside .image{
-    width: 500px;
-    padding: 30px;
+    width: 800px;
+    padding: 0px;
+    z-index: 0;
     justify-content: center;
+    position: relative;
+        top: 25%;
+        left: 50%;
+        transform: translate(-30%, 10%);
+    
+
+   
 }
 
 /*=========MEDIA QUERIES (DISPOSITIVOS PEQUENOS) ==========*/
@@ -100,10 +171,29 @@ aside .image{
         padding-top: 15px;
 
     }
+    main .atencao{
+        position: relative;
+        padding: 10;
+        margin-left: auto;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, -10%);
+            font-size: 25px;
+    }
     
     main .conteudo-esquerda .titulo {
         margin-top: 0px;
         font-size: 35px;
+        z-index: 1;
+}
+main .chamada {
+    font-family: League Spartan;
+    color: #3C184E;
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+
 }
 
     main .btn{
@@ -114,12 +204,20 @@ aside .image{
 
     main .conteudo-esquerda{
         padding-bottom: 0px;
+        z-index: 1;
+       
     }
 
     aside .image{
-        width: 300px;
+        width: 200px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 50px;
+        padding-left: 450px;
+       
+
+        top: 50%;
+        left: 50%;
+            transform: translate(-70%, -341%);
+            
     }
 }
